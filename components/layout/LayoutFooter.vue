@@ -1,0 +1,47 @@
+<script setup lang="ts">
+
+</script>
+
+<template>
+  <footer>
+    <div class="container">
+      <p>© 2025 • Fait avec Nuxt par moi-même</p>
+      <div>
+        <a href="https://github.com/Oural1206" target="_blank">
+          <img src="/assets/logos/github.svg" width="32" height="32" alt="Github">
+        </a>
+        <a href="https://discord.com/users/550295322329612307" target="_blank">
+          <img src="/assets/logos/discord.svg" width="32" height="32" alt="Discord">
+        </a>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<style scoped lang="sass">
+@use "/assets/style/_variables" as *
+
+footer
+  background-color: $color-secondary
+  color: $color-primary
+  padding: 0 10vw
+  .container
+    padding: 1rem 1.5rem
+    border-top: $color-primary 2px solid
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p
+      font-size: 0.95rem
+    div
+      display: flex
+      align-items: center
+      gap: 1.25rem
+      a img
+        filter: $filter-primary
+        transition: transform 0.2s ease-in-out
+        &:hover
+          transform: scale(0.9)
+        &:active
+          filter: $filter-highlight
+</style>

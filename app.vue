@@ -1,6 +1,5 @@
 <template>
   <layout-header />
-  <div>
-    <NuxtPage />
-  </div>
+  <NuxtPage />
+  <layout-footer />
 </template>
