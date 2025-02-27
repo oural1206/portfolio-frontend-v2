@@ -7,6 +7,9 @@
     <div class="container">
       <p>© 2025 • Fait avec Nuxt par moi-même</p>
       <div>
+        <a href="https://www.instagram.com/julesj.capture/" target="_blank">
+          <img src="/assets/logos/instagram.svg" width="32" height="32" alt="Instagram">
+        </a>
         <a href="https://github.com/Oural1206" target="_blank">
           <img src="/assets/logos/github.svg" width="32" height="32" alt="Github">
         </a>
