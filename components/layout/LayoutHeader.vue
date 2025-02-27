@@ -18,25 +18,22 @@ function handleScroll() {
 }
 
 function updateHeaderLink() {
+  let sectionName: string | null = null
   const offset = window.innerHeight / 3
   sections.forEach((section) => {
     if (isInViewport(section, offset)) {
-      const name = section.getAttribute('id')
-      if (name) {
-        hdrSectionDisplay.value = name
+      sectionName = section.getAttribute('id')
+      if (sectionName) {
         return
       }
     }
   })
-  hdrSectionDisplay.value = ''
+  hdrSectionDisplay.value = sectionName || ''
 }
 
 onMounted(() => {
-  const header = document.querySelector('header')
-  if (header) {
-    console.log(header.offsetHeight)
-    headerHeight = header.offsetHeight + Number.parseInt(window.getComputedStyle(header).getPropertyValue('margin-top'), 10)
-  }
+  const header = document.querySelector('header') as HTMLElement
+  headerHeight = header.offsetHeight + Number.parseInt(window.getComputedStyle(header).getPropertyValue('margin-top'), 10)
   sections = document.querySelectorAll('section.header-display')
 
   window.addEventListener('scroll', handleScroll)
@@ -50,15 +47,25 @@ onBeforeUnmount(() => {
 <template>
   <header :class="{ scrolled: !isAtTop }">
     <NuxtLink to="/" class="title" @click="scrollToTop">
-      <span class="name">Oural</span>
+      <span class="name">Jules</span>
       <span class="section">/{{ hdrSectionDisplay }}</span>
     </NuxtLink>
     <div class="links">
-      <NuxtLink to="/#about-me">#about-me</NuxtLink>
-      <NuxtLink to="/#expériences">#expériences</NuxtLink>
-      <NuxtLink to="/#compétences">#compétences</NuxtLink>
-      <NuxtLink to="/#réalisations">#réalisations</NuxtLink>
-      <NuxtLink to="/#contacts">#contacts</NuxtLink>
+      <NuxtLink to="/#about-me">
+        #about-me
+      </NuxtLink>
+      <NuxtLink to="/#expériences">
+        #expériences
+      </NuxtLink>
+      <NuxtLink to="/#compétences">
+        #compétences
+      </NuxtLink>
+      <NuxtLink to="/#réalisations">
+        #réalisations
+      </NuxtLink>
+      <NuxtLink to="/#contacts">
+        #contacts
+      </NuxtLink>
     </div>
   </header>
 </template>
