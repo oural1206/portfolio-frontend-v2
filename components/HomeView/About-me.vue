@@ -7,13 +7,13 @@
     <div class="first">
       <h2>Qui suis-je ?</h2>
       <p>
-        Un lycéen de 16 ans en classe de terminale au Lycée des Iris à Lormont.
+        Un lycéen de 17 ans en classe de terminale au Lycée des Iris à Lormont.
         <br><br>
-        Depuis tout petit, j’ai toujours eu l’esprit créatif et curieux, c’est pourquoi le monde numérique et le développement informatique sont très vite devenus pour moi une source d’inspiration et une réelle passion.
+        Depuis tout petit, j’ai toujours eu l’esprit créatif et curieux, c’est pourquoi le monde numérique et le développement informatique sont très vite devenus pour moi une source d’inspiration et une réelle passion ou je pouvais exprimer librement ma créativité.
         <br><br>
         A l’âge de 10 ans, j’ai débuté la programmation par blocs, via la robotique Lego EV3. Cela m’a stimulé et a été une révélation pour moi.
         <br><br>
-        Deux ans après, ayant envie d’aller plus loin, j'ai expérimenté le langage Python et j’ai vite basculé sur LUA via l’api de Roblox (univers 3D).
+        Deux ans après, ayant envie d’aller plus loin, j'ai expérimenté le langage Python et j’ai vite basculé sur LUA via l’api de Roblox (univers de jeux 3D).
         <br><br>
         Aujourd’hui, je suis toujours en constante progression et en quête de perfectionnement. J’ai pu développer de nouvelles compétences et enrichir ma méthodologie de manière autodidacte.
       </p>
@@ -22,14 +22,14 @@
       <div style="max-width: 70%">
         <h2>Mon projet d’orientation <span>&#128640;</span></h2>
         <ul>
-          <li>J'ai choisi les options : Maths, NSI et Physique Chimie (abandonnée en terminale) pour pouvoir intégrer un IUT en informatique et passer un diplôme d'ingénieur par la suite.</li>
-          <li>Je compte me spécialiser dans la cyber sécurité pour intégrer un métier dans ce secteur.</li>
-          <li>En attendant, je suis à la recherche de stages pour me conforter dans ce choix et mieux découvrir l’univers de la cyber sécurité et du digital.</li>
+          <li>J'ai choisi les options : Maths, NSI et Physique Chimie (abandonnée en terminale) pour pouvoir intégrer un IUT Génie Électrique Informatique Industrielle et passer un diplôme d'ingénieur par la suite.</li>
+          <li>Je compte me spécialiser dans le domaine de l’informatique mais aussi me développer à côté dans d’autres secteurs comme la mécatronique ou la réalisation vidéo.</li>
+          <li>En attendant, je participes à de nombreux projets en équipes ou alors de petites réalisations personnels qui me permettent d'acquérir toujours plus de compétences.</li>
         </ul>
       </div>
       <div style="max-width: 25%">
         <h3>Le développement,<br>mais pas que...</h3>
-        <p>En dehors du ma passion pour le monde numérique, j'aime faire du sport régulièrement, du violoncelle (orchestre symphonique) et passer du temps avec les gens qui m'entourent.</p>
+        <p>En dehors du ma passion pour le monde numérique, j'aime aussi consacrer du temps à mes autres passions comme le pilotage de drones, la réalisation vidéo / photographique ou encore le sport.</p>
       </div>
     </div>
   </section>
