@@ -57,6 +57,9 @@ onBeforeUnmount(() => {
       <NuxtLink to="/#expériences">
         #expériences
       </NuxtLink>
+      <NuxtLink to="/#recommandations">
+        #recommandations
+      </NuxtLink>
       <NuxtLink to="/#compétences">
         #compétences
       </NuxtLink>
