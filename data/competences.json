@@ -1,0 +1,39 @@
+[
+  {
+    "categoryName": "Développement &<br>Programmation",
+    "skills": [
+      { "name": "Nuxt (Vue.js)", "icon": "nuxtjs.svg" },
+      { "name": "AdonisJS", "icon": "adonisjs.svg" },
+      { "name": "Lua (Roblox)", "icon": "lua.svg" },
+      { "name": "PHP", "icon": "php.svg" },
+      { "name": "C++", "icon": "cpp.svg" },
+      { "name": "Electron", "icon": "electron.svg" }
+    ]
+  },
+  {
+    "categoryName": "DevOps &<br>Workflow Dev",
+    "skills": [
+      { "name": "Git", "icon": "git.svg" },
+      { "name": "Bash", "icon": "bash.svg" },
+      { "name": "Docker", "icon": "docker.svg" },
+      { "name": "GitHub Actions", "icon": "github.svg" }
+    ]
+  },
+  {
+    "categoryName": "Électronique &<br>Fabrication",
+    "skills": [
+      { "name": "Arduino", "icon": "arduino.svg" },
+      { "name": "Raspberry Pi", "icon": "raspberrypi.svg" },
+      { "name": "Conceptions électroniques", "icon": "easyeda.svg" },
+      { "name": "Modélisation et impression 3D", "icon": "fusion360.svg" }
+    ]
+  },
+  {
+    "categoryName": "Design &<br>Création Visuelle",
+    "skills": [
+      { "name": "Figma", "icon": "figma.svg" },
+      { "name": "Lightroom & Photoshop", "icon": "lightroom.svg" },
+      { "name": "Premiere Pro & After Effects", "icon": "premierepro.svg" }
+    ]
+  }
+]
