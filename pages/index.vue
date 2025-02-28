@@ -6,6 +6,7 @@ import Contacts from '~/components/HomeView/Contacts.vue'
 import Experiences from '~/components/HomeView/Experiences.vue'
 import HeroBanner from '~/components/HomeView/HeroBanner.vue'
 import Productions from '~/components/HomeView/Productions.vue'
+import Services from '~/components/HomeView/Services.vue'
 
 useHead({
   title: 'Portfolio - Jules',
@@ -20,6 +21,7 @@ useHead({
     <Advices />
     <Competences />
     <Productions />
+    <Services />
     <Contacts />
   </div>
 </template>
