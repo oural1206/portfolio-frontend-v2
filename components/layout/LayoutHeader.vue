@@ -57,7 +57,7 @@ onBeforeUnmount(() => {
       <NuxtLink to="/#expériences">
         #expériences
       </NuxtLink>
-      <NuxtLink to="/#recommandations">
+      <NuxtLink to="/#recommandations" class="xl-screen">
         #recommandations
       </NuxtLink>
       <NuxtLink to="/#compétences">
@@ -118,6 +118,9 @@ header
       &:active::after
         transform: scaleY(1.5)
         transition: transform 0.075s ease-out
+  @media (max-width: $xl)
+    .links a.xl-screen
+      display: none
   @media (max-width: $l)
     .title
       font-size: 1.125rem

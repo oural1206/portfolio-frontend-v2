@@ -15,7 +15,7 @@ $filter-white: invert(100%) sepia(78%) saturate(573%) hue-rotate(301deg) brightn
 $filter-highlight: invert(84%) sepia(13%) saturate(1983%) hue-rotate(334deg) brightness(99%) contrast(97%)
 $filter-wrong: invert(42%) sepia(34%) saturate(1028%) hue-rotate(309deg) brightness(107%) contrast(83%)
 
-$xs: 448px
+$xs: 500px
 $s: 640px
 $m: 768px
 $ml: 917px
@@ -24,9 +24,13 @@ $xl: 1280px
 
 @mixin padding
   padding: 10rem 15rem
+  @media (max-width: 1600px)
+    padding: 7.5rem 10rem
   @media (max-width: $l)
     padding: 5rem 10rem
   @media (max-width: $ml)
     padding: 5rem
   @media (max-width: $m)
     padding: 3.75rem
+  @media (max-width: $xs)
+    padding: 3.75rem 2rem

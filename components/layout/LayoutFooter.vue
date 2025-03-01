@@ -6,7 +6,7 @@
   <footer>
     <div class="container">
       <p>OURAL.DEV © 2025 • Fait avec Nuxt et designé sur Figma par moi-même</p>
-      <div>
+      <div class="social-links">
         <a href="https://www.instagram.com/julesj.capture/" target="_blank">
           <img src="/assets/logos/instagram.svg" width="32" height="32" alt="Instagram">
         </a>
@@ -36,7 +36,7 @@ footer
     align-items: center
     p
       font-size: 0.95rem
-    div
+    .social-links
       display: flex
       align-items: center
       gap: 1.25rem
@@ -47,4 +47,11 @@ footer
           transform: scale(0.9)
         &:active
           filter: $filter-highlight
+    @media (max-width: $ml)
+      flex-direction: column
+      gap: 1.25rem
+      p
+        text-align: center
+      .social-links
+        justify-content: center
 </style>

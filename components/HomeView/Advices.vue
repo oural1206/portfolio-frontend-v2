@@ -30,7 +30,7 @@ const advices = ref(advicesData)
   color: $color-primary
   display: flex
   flex-direction: column
-  @include padding
+  padding: 10rem
   h2
     font-weight: 900
     font-size: 1.625rem
@@ -42,12 +42,14 @@ const advices = ref(advicesData)
   .container
     display: flex
     align-items: start
-    justify-content: space-between
+    justify-content: center
+    gap: 5rem
+    flex-wrap: wrap
     .advice
       display: flex
       flex-direction: column
       align-items: center
-      width: 30%
+      width: 22.5rem
       border: 0.375rem solid $color-primary
       border-radius: 1rem
       padding: 0 2rem 2rem 2rem
@@ -85,4 +87,12 @@ const advices = ref(advicesData)
       p
         font-size: 1rem
         line-height: 1.5
+  @media (max-width: 1600px)
+    padding: 7.5rem 5rem
+  @media (max-width: $l)
+    padding: 5rem
+  @media (max-width: $m)
+    padding: 3.75rem
+  @media (max-width: $xs)
+    padding: 3.75rem 2rem
 </style>

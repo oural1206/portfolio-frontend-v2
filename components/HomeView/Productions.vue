@@ -56,7 +56,7 @@ const currentProduction: any = ref(null)
     display: flex
     justify-content: center
     flex-wrap: wrap
-    gap: 2rem
+    gap: 5rem
     .production
       display: flex
       gap: 1rem
@@ -119,6 +119,14 @@ const currentProduction: any = ref(null)
         box-shadow: 0 0 2rem rgba(0, 70, 67, 0.75)
         .expand
           filter: $filter-highlight
+    @media (max-width: $m)
+      gap: 3.5rem
+      .production
+        width: 90%
+        height: auto
+        flex-direction: column
+        .content
+          gap: 2.5rem
   .reader
     .container
       z-index: 15
@@ -156,4 +164,12 @@ const currentProduction: any = ref(null)
       width: 100%
       background-color: rgba(0, 30, 29, 0.75)
       backdrop-filter: blur(7.5px)
+  @media (max-width: 2000px)
+    padding: 7.5rem 5rem
+  @media (max-width: $l)
+    padding: 5rem
+  @media (max-width: $m)
+    padding: 3.75rem
+  @media (max-width: $xs)
+    padding: 3.75rem 2rem
 </style>

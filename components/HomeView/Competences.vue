@@ -42,7 +42,8 @@ const competences = ref(competencesData)
       font-size: 2rem
   .columns
     display: flex
-    justify-content: space-between
+    justify-content: space-evenly
+    flex-wrap: wrap
     gap: 5rem
     h4
       font-size: 1.25rem
@@ -63,4 +64,10 @@ const competences = ref(competencesData)
           height: 1.5rem
           width: 1.5rem
           filter: $filter-highlight
+    @media (max-width: $l)
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+    @media (max-width: $xs)
+      display: flex
+      justify-content: start
 </style>
