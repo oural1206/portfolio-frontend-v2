@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   pages: true,
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/fonts'],
+  modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/content'],
   eslint: {
     config: {
       standalone: false,

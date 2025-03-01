@@ -1,22 +1,21 @@
 <script setup lang="ts">
-import productionsData from '~/data/productions.json'
-
-const productions = ref(productionsData)
+const { data: productions } = await useAsyncData(() => queryCollection('productions').all())
+const currentProduction: any = ref(null)
 </script>
 
 <template>
   <section id="réalisations" class="header-display">
     <h2>Mes différentes réalisations <span>&#x1F9F1;</span></h2>
     <div class="container">
-      <div v-for="(production, index) in productions" :key="index" class="production">
-        <div class="thumbnail" :style="`background-image: url('${`/public-assets/productions-cover/${production.thumbnail}`}')`" />
+      <div v-for="(production, index) in productions" :key="index" class="production" @click="currentProduction = production">
+        <div class="thumbnail" :style="`background-image: url('/public-assets/productions-cover/${production.meta.cover}')`" />
         <div class="content">
           <div class="text">
-            <h3>{{ production.name }}</h3>
+            <h3>{{ production.title }}</h3>
             <p v-html="production.description" />
           </div>
           <ul class="tags">
-            <li v-for="(tag, tagIndex) in production.tags" :key="tagIndex">
+            <li v-for="(tag, tagIndex) in production.meta.competences" :key="tagIndex">
               <img :src="`/public-assets/skills-icons/${tag.icon}`" :alt="`Icon de ${tag.name}`">
               <span>{{ tag.name }}</span>
             </li>
@@ -25,10 +24,17 @@ const productions = ref(productionsData)
         </div>
       </div>
     </div>
+    <div v-if="currentProduction" class="reader">
+      <div class="background" @click="currentProduction = null" />
+      <div class="container">
+        <img class="close-btn" src="/assets/icons/cross.svg" alt="Icon fermer" @click="currentProduction = null">
+        <ContentRenderer class="content" :value="currentProduction" />
+      </div>
+    </div>
   </section>
 </template>
 
-<style scoped lang="sass">
+<style lang="sass">
 @use "/assets/style/_variables" as *
 
 #réalisations
@@ -111,4 +117,43 @@ const productions = ref(productionsData)
       &:hover
         transform: scale(1.0125)
         box-shadow: 0 0 2rem rgba(0, 70, 67, 0.75)
+        .expand
+          filter: $filter-highlight
+  .reader
+    .container
+      z-index: 15
+      position: fixed
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      padding: 3rem
+      border-radius: 5px
+      width: 50vw
+      color: $color-secondary
+      background-color: $color-primary
+      .content
+        width: 100%
+        height: 100%
+        text-align: left
+        h1, h2
+          color: $color-white
+      .close-btn
+        position: absolute
+        top: 1.5rem
+        right: 1.5rem
+        width: 1.5rem
+        height: 1.5rem
+        filter: $filter-secondary
+        cursor: pointer
+        &:hover
+          filter: $filter-highlight
+    .background
+      z-index: 10
+      position: fixed
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      background-color: rgba(0, 30, 29, 0.75)
+      backdrop-filter: blur(7.5px)
 </style>
