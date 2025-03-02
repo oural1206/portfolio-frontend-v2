@@ -16,7 +16,7 @@ onMounted(() => {
       <h2>Je suis <span>Jules</span>, un Lycéen <br>passionné par le monde numérique...</h2>
     </div>
     <div class="image">
-      <img src="/assets/images/profilePicture.webp" alt="Photo de mon avatar">
+      <NuxtImg src="/assets/images/profilePicture.webp" alt="Photo de mon avatar" />
       <p class="code">
         let button_menu = document.querySelector(".header_button");<br>
         let float_menu  = document.querySelector(".header_menu--float");<br>
@@ -53,7 +53,7 @@ onMounted(() => {
     </div>
   </section>
   <NuxtLink to="/#about-me" class="scrollDown">
-    <img src="/assets/icons/down-arrow.svg" width="18" height="18" alt="Flèche pointant vers le bas">
+    <NuxtImg src="/assets/icons/down-arrow.svg" width="18" height="18" alt="Flèche pointant vers le bas" />
   </NuxtLink>
 </template>
 
@@ -110,7 +110,7 @@ onMounted(() => {
     align-items: center
     width: 45%
     img
-      max-width: 25rem
+      width: 22.5rem
       position: absolute
       top: 50%
       left: 50%

@@ -14,7 +14,7 @@ const experiences = ref(experiencesData)
     <div class="list">
       <div v-for="(item, index) in experiences" :key="index" class="item">
         <div class="left">
-          <img :src="`/public-assets/company-logos/${item.image}`" :alt="`Logo de l'entreprise ${item.name}`">
+          <NuxtImg :src="`/assets/company-logos/${item.image}`" :alt="`Logo de l'entreprise ${item.name}`" />
           <p v-html="item.description" />
         </div>
         <div class="right">

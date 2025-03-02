@@ -12,7 +12,7 @@ const competences = ref(competencesData)
         <h4 v-html="category.categoryName" />
         <ul>
           <li v-for="(item, subIndex) in category.skills" :key="subIndex">
-            <img :src="`/public-assets/skills-icons/${item.icon}`" :alt="`Icon de ${item.name}`">
+            <NuxtImg :src="`/assets/skills-icons/${item.icon}`" :alt="`Icon de ${item.name}`" />
             <span>{{ item.name }}</span>
           </li>
         </ul>

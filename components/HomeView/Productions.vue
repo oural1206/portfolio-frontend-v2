@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const img = useImage()
 const { data: productions } = await useAsyncData(() => queryCollection('productions').all())
 const currentProduction: any = ref(null)
 </script>
@@ -8,7 +9,7 @@ const currentProduction: any = ref(null)
     <h2>Mes différentes réalisations <span>&#x1F9F1;</span></h2>
     <div class="container">
       <div v-for="(production, index) in productions" :key="index" class="production" @click="currentProduction = production">
-        <div class="thumbnail" :style="`background-image: url('/public-assets/productions-cover/${production.meta.cover}')`" />
+        <div class="thumbnail" :style="`background-image: url('${img(`/assets/productions-img/${production.meta.cover}`)}')`" />
         <div class="content">
           <div class="text">
             <h3>{{ production.title }}</h3>
@@ -16,18 +17,18 @@ const currentProduction: any = ref(null)
           </div>
           <ul class="tags">
             <li v-for="(tag, tagIndex) in production.meta.competences" :key="tagIndex">
-              <img :src="`/public-assets/skills-icons/${tag.icon}`" :alt="`Icon de ${tag.name}`">
+              <NuxtImg :src="`/assets/skills-icons/${tag.icon}`" :alt="`Icon de ${tag.name}`" />
               <span>{{ tag.name }}</span>
             </li>
           </ul>
-          <img class="expand" src="/assets/icons/cross.svg" alt="Icon plus">
+          <NuxtImg class="expand" src="/assets/icons/cross.svg" alt="Icon plus" />
         </div>
       </div>
     </div>
     <div v-if="currentProduction" class="reader">
       <div class="background" @click="currentProduction = null" />
       <div class="container">
-        <img class="close-btn" src="/assets/icons/cross.svg" alt="Icon fermer" @click="currentProduction = null">
+        <NuxtImg class="close-btn" src="/assets/icons/cross.svg" alt="Icon fermer" @click="currentProduction = null" />
         <ContentRenderer class="content" :value="currentProduction" />
       </div>
     </div>

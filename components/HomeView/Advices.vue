@@ -10,8 +10,8 @@ const advices = ref(advicesData)
     <div class="container">
       <div v-for="(advice, index) in advices" :key="index" class="advice">
         <span class="picture">
-          <img class="profile" :src="`/public-assets/customers/${advice.profilePicture}`" :alt="`Photo de ${advice.name}`">
-          <img class="logo" :src="`/public-assets/company-logos/${advice.companyLogo}`" :alt="`Logo de ${advice.companyName}`">
+          <NuxtImg class="profile" :src="`/assets/customers-pp/${advice.profilePicture}`" :alt="`Photo de ${advice.name}`" />
+          <NuxtImg class="logo" :src="`/assets/company-logos/${advice.companyLogo}`" :alt="`Logo de ${advice.companyName}`" />
         </span>
         <h4>{{ advice.name }}</h4>
         <span class="company-name">{{ advice.companyName }}</span>

@@ -35,7 +35,7 @@ function sendMessage(event: Event) {
         <div class="items">
           <div id="phone" class="item" />
           <div id="email" class="item">
-            <img src="/assets/icons/envelope.svg" width="32" height="32" alt="Enveloppe">
+            <NuxtImg src="/assets/icons/envelope.svg" width="32" height="32" alt="Enveloppe" />
             <div>
               <h4>Email</h4>
               <p><a href="mailto:me@oural.dev">me@oural.dev</a>, <a href="mailto:support@oural.dev">support@oural.dev</a></p>
