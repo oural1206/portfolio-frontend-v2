@@ -72,7 +72,7 @@ const experiences = ref(experiencesData)
         flex-direction: column
         max-width: 25%
         img
-          max-height: 3.75rem
+          height: 3.75rem
           max-width: 10rem
           margin-bottom: 1.25rem
       .right
