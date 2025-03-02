@@ -8,13 +8,13 @@
       <p>OURAL.DEV © 2025 • Fait avec Nuxt et designé sur Figma par moi-même</p>
       <div class="social-links">
         <a href="https://www.instagram.com/julesj.capture/" target="_blank">
-          <NuxtImg src="/assets/logos/instagram.svg" width="32" height="32" alt="Instagram" />
+          <NuxtImg src="/assets/icons/instagram.svg" width="32" height="32" alt="Instagram" />
         </a>
         <a href="https://github.com/Oural1206" target="_blank">
-          <NuxtImg src="/assets/logos/github.svg" width="32" height="32" alt="Github" />
+          <NuxtImg src="/assets/icons/github.svg" width="32" height="32" alt="Github" />
         </a>
         <a href="https://discord.com/users/550295322329612307" target="_blank">
-          <NuxtImg src="/assets/logos/discord.svg" width="32" height="32" alt="Discord" />
+          <NuxtImg src="/assets/icons/discord.svg" width="32" height="32" alt="Discord" />
         </a>
       </div>
     </div>
