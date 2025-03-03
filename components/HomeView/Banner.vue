@@ -3,15 +3,15 @@
 </script>
 
 <template>
-  <section id="services" class="header-display">
-    <h3><span>&#9888;</span> Je suis actuellement indisponible pour toutes demandes de services (hors audiovisuel) <span>&#9888;</span></h3>
+  <section id="banner" class="header-display">
+    <h3><span>&#9888;</span> D'autres réalisations arrivent bientôt <span>&#9888;</span></h3>
   </section>
 </template>
 
 <style scoped lang="sass">
 @use "/assets/style/_variables" as *
 
-#services
+#banner
   width: 100%
   background-color: $color-primary
   color: $color-secondary
