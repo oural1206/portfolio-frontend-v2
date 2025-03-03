@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const img = useImage()
 const { data: productions } = await useAsyncData(() => queryCollection('productions').all())
 const currentProduction: any = ref(null)
 </script>
@@ -8,7 +9,7 @@ const currentProduction: any = ref(null)
     <h2>Mes différentes réalisations <span>&#x1F9F1;</span></h2>
     <div class="container">
       <div v-for="(production, index) in productions" :key="index" class="production" @click="currentProduction = production">
-        <div class="thumbnail" :style="`background-image: url('/assets/productions-img/${production.meta.cover}')`" />
+        <div class="thumbnail" :style="`background-image: url('${img(`/assets/productions-img/${production.meta.cover}`)}')`" />
         <div class="content">
           <div class="text">
             <h3>{{ production.title }}</h3>
