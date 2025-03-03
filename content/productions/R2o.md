@@ -11,7 +11,7 @@ competences: [
   { name: 'Arduino', icon: 'arduino.svg' },
   { name: 'Raspberry Pi', icon: 'raspberrypi.svg' }
 ]
-cover: 'r2o/pcb.png'
+cover: 'r2o/cover.png'
 ---
 
 
