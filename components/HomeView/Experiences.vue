@@ -8,7 +8,7 @@ const experiences = ref(experiencesData)
   <section id="expériences" class="header-display">
     <div class="title">
       <h2>Expériences en milieu professionnel <span>&#129309;</span></h2>
-      <p>Je suis tellement motivé pour faire de ma passion mon métier que mon objectif est de commencer à faire des stages, y compris de façon volontaire.</p>
+      <p>Je suis tellement motivé pour faire de ma passion mon métier que j'ai délà effectué plusieurs stages, y compris de façon volontaire.</p>
     </div>
     <div class="separation" />
     <div class="list">
@@ -50,7 +50,7 @@ const experiences = ref(experiencesData)
         margin-left: 0.5rem
         font-size: 2rem
     p
-      max-width: 65%
+      max-width: 50rem
   .separation
     width: 75%
     position: relative
