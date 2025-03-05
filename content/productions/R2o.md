@@ -38,7 +38,7 @@ Les capteurs sont ensuite reliés à la carte électronique par des bornes à vi
 ### 2. Programmation de l'application web
 Pour configurer le système, le surveiller et avoir des rapports sur les économies faites, j'ai choisi de faire une web app hébergée localement sur la **Raspberry Pi** (et accessible via **VPN**).  
 
-Pour cette application, j’ai choisi **VueJS** avec la librairie de composants **PrimeVue*. L’application est pensée **Mobile FIRST** car son utilisation est prévue sur téléphone voire sur tablette.  
+Pour cette application, j’ai choisi **VueJS** avec la librairie de composants **PrimeVue**. L’application est pensée **Mobile FIRST** car son utilisation est prévue sur téléphone, voire sur tablette.  
 Elle communique à l’aide d'une api avec des **Server-Sent-Event (SSE)** et des requêtes **REST** pour récupérer les données telles que les valeurs des capteurs en temps direct.
 
 ![Photo du PCB](/assets/productions-img/r2o/ui.png) <span class="center">*Photo du croquis de la home page et sa réalisation final*</span>
@@ -52,3 +52,8 @@ Les conteneurs sont build et push automatiquement avec une **GitHub Action**.
 L'installation des mises à jour est autonome grâce à un script **Bash** après déclenchement sur l'interface web.
 
 ![Photo du PCB](/assets/productions-img/r2o/maj.jpg) <span class="center">*Screenshot de la page pour déclencher les mises à jour*</span>
+
+# Et maintenant ?
+Le projet avance à grands pas et prend une réelle tournure de startup : présentations à des concours de pitch, création d'une société, dépôt de brevet, étude de marché, ...
+
+En attendant je continue de travailler sur le projet : design d'une nouvelle carte électronique, amélioration de l'application web, ajout de nouvelles fonctionnalités et correction des bugs.
