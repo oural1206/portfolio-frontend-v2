@@ -32,8 +32,8 @@
     "categoryName": "Design &<br>Création Visuelle",
     "skills": [
       { "name": "Figma", "icon": "figma.svg" },
-      { "name": "Lightroom & Photoshop", "icon": "lightroom.svg" },
-      { "name": "Premiere Pro & After Effects", "icon": "premierepro.svg" }
+      { "name": "DaVinci Resolve", "icon": "davinciresolve.svg" },
+      { "name": "Lightroom & Photoshop", "icon": "lightroom.svg" }
     ]
   }
 ]
